@@ -13,7 +13,7 @@ import HeaderComponent from './header/header.component';
 import MenuComponent from './menu/menu.component';
 
 // Initialize components with states
-const components = angular.module('workshop.components', [
+export default angular.module('workshop.components', [
   AppComponent.name,
   HomePage.name,
   ProductsPage.name,
@@ -21,5 +21,3 @@ const components = angular.module('workshop.components', [
   HeaderComponent.name,
   MenuComponent.name
 ]);
-
-export default components;
