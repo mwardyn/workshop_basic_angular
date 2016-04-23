@@ -7,7 +7,7 @@ describe('ProductsService', function() {
     $httpMock = {
       get: jasmine.createSpy('$http.get'),
       post: jasmine.createSpy('$http.post'),
-      update: jasmine.createSpy('$http.update'),
+      put: jasmine.createSpy('$http.put'),
       delete: jasmine.createSpy('$http.delete')
     };
 
@@ -30,7 +30,7 @@ describe('ProductsService', function() {
   it('should be able to update data from API', () => {
     this.subject.update(33, 'something');
 
-    expect($httpMock.update).toHaveBeenCalledWith('//test/33', 'something');
+    expect($httpMock.put).toHaveBeenCalledWith('//test/33', 'something');
   });
 
   it('should be able to delete data from API', () => {

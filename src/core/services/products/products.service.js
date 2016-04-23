@@ -19,7 +19,7 @@ export default class ProductsService {
   }
 
   update(id, data) {
-    // return here request type UPDATE
+    // return here request type PUT
   }
 
   delete(id) {

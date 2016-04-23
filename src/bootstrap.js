@@ -18,5 +18,4 @@ angular.module('app', [ 'ngMaterial', 'ngMessages', router, core.name, component
       $mdThemingProvider.setDefaultTheme('smt');
       $mdIconProvider.defaultFontSet('material-icons');
     }
-  ])
-  .run();
+  ]);
